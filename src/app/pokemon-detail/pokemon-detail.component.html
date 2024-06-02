@@ -1,0 +1,60 @@
+<div class="pokedexDetailContainer">
+    <div class="secondScreen">
+        <div class="pokemonInfo">
+            <div class="infoHeader">
+                <p>{{pokemon?.name|uppercase}}</p>
+                <p># {{pokemon?.number}}</p>
+            </div>
+            <img [src]="pokemon?.gifUrl ?? pokemon?.imageUrl" alt="Pokemon sprite">
+            <hr>
+            <p> 
+                {{pokemon?.description}}
+            </p>
+            <div class="infoFooter">
+                <p>Height: {{pokemon?.height}} m</p>
+                <p>Weight: {{pokemon?.weight}} kg</p>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="secondScreen">
+        <div class="pokemonInfo">
+            <div class="infoHeader">
+                <p>ZEKROM</p>
+                <p>#644</p>
+            </div>
+            <img src="assets/Image/zekromGifTest.gif" alt="Photo">
+            <hr>
+            <p> 
+                It can produce ultrasonic waves of over 200 
+                decibels by rubbing its two wings together. 
+                It overwhelms foes with these powerful sound waves, 
+                and then it seizes them with its sharp claws.
+            </p>
+            <div class="infoFooter">
+                <p>Heigth: 2.5m</p>
+                <p>Weigth: 270.5kg</p>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="btnHolder">
+        <button (click)="getPreviousPokemon()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+            </svg>
+        </button>
+
+        <button id="switchTv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            </svg>
+        </button>
+
+        <button (click)="getNextPokemon()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+            </svg>
+        </button>
+    </div>
+</div>

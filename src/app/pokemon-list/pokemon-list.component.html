@@ -1,0 +1,14 @@
+<app-search (searchQuery)="searchPokemon($event)" style="width: 100%;"></app-search>
+<div class="pokemonHolder">
+    <h2 *ngIf="filteredPokemons.length<1">No pokemon found with name "{{searchName}}"</h2>
+  <div class="pokemonResult" *ngFor="let pokemon of filteredPokemons" (click)="selectPokemon(pokemon)">
+    <div class="pokemonContent">
+        <img [src]="pokemon.imageUrl" alt="Pokemon sprite">
+        <div class="pokemonInfo">
+            <p>{{pokemon.name | uppercase}}</p>
+            <p>#{{pokemon.number}}</p>
+            <p>{{pokemon.types ? pokemon.types.join(' | ') : ''}}</p>
+        </div>
+    </div>
+    </div>
+</div>

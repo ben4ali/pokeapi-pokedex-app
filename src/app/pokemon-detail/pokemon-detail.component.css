@@ -1,0 +1,101 @@
+.pokedexDetailContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    width: 30rem;
+    background-color: rgb(178, 70, 70);
+    border-radius: 7px;
+    box-shadow: 2px 6.5px 0px 5px rgb(149, 12, 12);
+}
+.secondScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    height: 77%;
+    width: 91%;
+    background-color: rgb(26, 53, 96);
+    border-radius: 7px;
+    border: 8px solid rgb(177, 169, 151);
+    background-image: url("https://www.freeiconspng.com/thumbs/grid-png/grid-png-transparent-pic-18.png");
+    background-image: oop;
+}
+.pokemonInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.pokemonInfo img{
+    width: auto;
+    height: 9rem;
+    margin-top: 1rem;
+}
+.infoHeader{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 17px;
+    font-weight: 100;
+}
+.infoHeader p{
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.pokemonInfo p:nth-child(4){
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    font-size: 12px;
+    margin-inline: 2rem;
+    font-weight: 100;
+    line-height: 1.35rem;
+}
+.infoFooter{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 2rem;
+    align-self: flex-start;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.infoFooter p{
+    margin: 0;
+    letter-spacing: -2px;
+}
+.btnHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 75%;
+    margin-top: 1.25rem;
+    margin-inline: 5rem;
+}
+.btnHolder button{
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(244, 164, 96);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(187, 105, 33);
+    box-shadow: -3px 3px 0px 1px rgb(195, 110, 35);
+}
+.btnHolder button:hover{
+    box-shadow: -2px 2px 0px 1px rgb(214, 120, 39,0);
+    background-color: rgb(219, 146, 82);
+    color: rgb(164, 92, 29);
+    transform: translateX(-2px) translateY(2px);
+    transition: 0.2s;
+}
+
